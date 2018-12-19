@@ -20,11 +20,13 @@ I created the calculated field ‘2018 Prediction’ by inputting: [total penalt
 This calculation shows a prediction of how many penalties would be called by the end of the year. This table allowed me to predict how many calls will be made by the end of the season. If the prediction is correct, we will see a new all-time high in penalties called in a season. 
 The second table is the same as the first one, except it shows the data from the seasons other than 2018. I also wanted to calculate the average penalty calls per year from 2008-2017, so I could compare it to the 2018 prediction as well as every other season. I created my header with the same method as the first table with the categories: Penalty, Times Called, and 2008-2017 average calls per year. I then created a parameter to allow the user of this table to view the amount of each penalty called in any season of their choosing. In my parameter, I set the date range from 2008-2017. Then I needed to create a calculated field for my parameter to be used in the visualization. I created the calculated field ‘Total Penalties Called 2008-2017’ by inputting (If [Season]= [Parameters].[Season] THEN [Total Penalties Called] END).  To calculate the average penalty calls per season from 2008-2017, I created a calculated field by inputting ( [Total Penalties Called]/10). This created an interactive table where users can select which season they want to compare with the 10 year average. It also helped conclude that more penalties are being called and it also shows which ones are above and below the ten year average.
 ## Tableau Dashboards
-<iframe src = "https://public.tableau.com/views/PenaltiesPerSeason2008-2017/PenaltiesPerSeason?:embed=y&:display_count=yes"width="95%"height="600"></iframe>
 
-<iframe src = "https://public.tableau.com/views/NFLPenaltyCalls2008-20181/PenaltyCalls2008-2017?:embed=y&:display_count=yes"width="95%"height="600"></iframe>
+<iframe src = "https://public.tableau.com/views/PenaltiesPerSeason2008-2017/PenaltiesPerSeason?:embed=y&:display_count=yes" width="95%" height="600"></iframe>
 
-<iframe src = "https://public.tableau.com/views/NFLPenaltyCalls2008-2018/2018Penaltys?:embed=y&:display_count=yes"width="95%"height="600"></iframe>
+<iframe src = "https://public.tableau.com/views/NFLPenaltyCalls2008-20181/PenaltyCalls2008-2017?:embed=y&:display_count=yes" width="95%" height="600"></iframe>
+
+<iframe src = "https://public.tableau.com/views/NFLPenaltyCalls2008-2018/2018Penaltys?:embed=y&:display_count=yes" width="95%" height="600"></iframe>
+
 
 ## Data Visualization Methodology
 I used the following data visualization methods that I learned from reading the textbook ‘Story Telling with Data’ by Knaflic, Cole Nussbaumer. 
